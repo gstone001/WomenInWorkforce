@@ -1,0 +1,19 @@
+---
+title: "Bifold Analysis, Women in the Workforce"
+author: "Gabriela Stone, gstone@thinkpic.org"
+date: "2025-04-1"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# FIRST: download IPUMS files from SharePoint. 
+# Then, add the file path here to these files on your computer. To find, use: file.choose() on the console.
+ipums_path <- ""
+
+# Read IPUMS data. A code file called "common.r" reads the data, creates variables common to all the bifolds. 
+source("../common.r") # This creates the "acs" dataset in your environment. "acs" is a California subset of 1-yr acs data from 2013 to 2023. It does not include 2020 data. 
+```
